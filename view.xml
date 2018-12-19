@@ -1,0 +1,31 @@
+<views>
+    <view id="" template="" copyfrom="">
+        <publish parent="" open="true" seq=""></publish>
+
+        <component id="" type="">
+            <view-model></view-model>
+            <model></model>
+            <actions>
+                <action event-type="">
+                    <operation-call id="LOAD">
+                        <component-id></component-id>
+                        <operation-id></operation-id>
+                        <parameters>
+                            <parameter id="" value=""></parameter>
+                            <parameter id="" value=""></parameter>
+                            <parameter id="" value=""></parameter>
+                        </parameters>
+                    </operation-call>
+                </action>
+            </actions>
+            <operations>
+                <operation id="">
+                    <service-call id="SVC1">
+                        <service-id></service-id>
+                        <service-target></service-target>
+                    </service-call>
+                </operation>
+            </operations>
+        </component>
+    </view>
+</views>
