@@ -24,7 +24,7 @@ public class WingUIController {
         return getData();
     }
 
-    @RequestMapping("/getmenu")
+    @RequestMapping("/getlanguages")
     public JSONObject getMenu() {
         return getData2();
     }
@@ -65,15 +65,15 @@ public class WingUIController {
     }
 
     private JSONObject getData2() {
-        String languageCode = "KR";
+        String languageCode = "ko";
         
         JSONObject resultLanguageObj;
-        // if (languageObj.containsKey(languageCode)) {
-        //     resultLanguageObj = new JSONObject();
-        //     resultLanguageObj.put(languageCode, languageObj.get(languageCode));
-        // } else {
+        if (languageObj.containsKey(languageCode)) {
+            resultLanguageObj = new JSONObject();
+            resultLanguageObj.put(languageCode, languageObj.get(languageCode));
+        } else {
             resultLanguageObj = getLanguage(languageCode);
-        // }
+        }
 
         return resultLanguageObj;
     }

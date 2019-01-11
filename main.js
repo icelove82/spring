@@ -22,3 +22,6 @@ document.addEventListener("click", showHelloWorld)
 
 document.body.style.background = "blue"
 
+let myName = "ymx"
+console.log(`Hello, my name is ${myName} and the sky is blue.`)
+

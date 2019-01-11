@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<t3engine>
+	<id>T3WEBUI</id>
+	<client>
+		<sync-factory>com.zionex.t3platform.netty.NettySyncClientFactory</sync-factory>
+		<async-factory>com.zionex.t3platform.netty.NettyAsyncClientFactory</async-factory>
+	
+		<communication-mode>INDIRECT</communication-mode>
+		<message-serializations>
+			<message-serialization server-id='T3SeriesDemandPlanServer' method='GZIPPED_JSON'/> <!-- ZIPPED_JSON -->
+		</message-serializations>
+		<connections service-bus="service-bus">
+			<connection id="service-bus">
+				<host>localhost</host>
+<!-- 				<host>192.168.0.137</host> -->
+				<port>8007</port>		
+			</connection>
+			<connection id="REGISTRY">
+				<host>localhost</host>
+<!-- 				<host>192.168.0.137</host> -->
+				<port>8007</port>		
+			</connection>
+		</connections>
+	</client>
+</t3engine>

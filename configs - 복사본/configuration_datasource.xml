@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<t3series>
+	<data-sources default="T3SERIES">
+		<data-source id="T3SERIES" name="T3SERIES">
+			<type>ORACLE_2</type>
+			<url>jdbc:oracle:thin:@192.168.0.31:1521:zionex</url>
+			<user encryption="false">MD01</user>
+			<password encryption="false">hce!scm</password>
+		</data-source>
+	</data-sources>
+</t3series>
