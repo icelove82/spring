@@ -1,6 +1,6 @@
 buildscript {
 	ext {
-		springBootVersion = '2.1.0.RELEASE'
+		springBootVersion = '2.1.2.RELEASE'
 	}
 	repositories {
 		mavenCentral()
@@ -23,6 +23,9 @@ repositories {
 	mavenCentral()
 }
 
+bootJar {
+    mainClassName = 'com.example.demo6.DemoApplication'
+}
 
 dependencies {
 	implementation fileTree(dir: 'libs', include: ['*.jar'])
